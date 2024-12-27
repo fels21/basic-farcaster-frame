@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "vercel-build": "npm run build",
     "start:api": "node dist/api.js",
     "start:home": "node dist/home.js",
     "start": "npm run start:api & npm run start:home",
