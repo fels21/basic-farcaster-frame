@@ -1,0 +1,28 @@
+{
+  "name": "webapp-node-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:api": "node dist/api.js",
+    "start:home": "node dist/home.js",
+    "start": "npm run start:api & npm run start:home",
+    "dev:api": "tsc && nodemon dist/api.js",
+    "dev:home": "tsc && nodemon dist/home.js",
+    "dev": "npm run dev:api & npm run dev:home"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.2"
+  }
+}
